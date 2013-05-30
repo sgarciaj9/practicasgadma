@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+	<head>
+		<title>Exercici2 Layout - Fluid Grid</title>
+		<style>
+
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#contenedor {
+				max-width: 960px; /*En px perque volem d'amplada màxima 960px de la pantalla.*/
+				margin: 0px auto 0px auto;
+				height: 531px; 
+			}
+			#pagina {
+				width: 93.75%; /* 900px / 960px */
+				margin: 0px auto 0px auto;
+				height: 531px;
+			}
+			.relleno {
+				clear: both;
+			}
+			#cabecera {
+				border: 2px;
+				border-style: solid;
+				background-color: white;
+			}
+			#titulocabecera {
+				float: left;
+				margin: 35px auto 35px 25px;
+				font-size:34px;
+			}
+			#contenido {
+				float:left;
+				width:93.75%; /* 900px / 960px */
+				margin: 5px 0px;
+				padding: 0px;
+			}
+			#izq{
+				float:left;
+				width:80.55%; /* 725px / 900px */
+				margin: 5px 5px auto 40px;
+				border: 2px;
+				border-style: solid;
+				background-color: white;
+				font-size:14px;
+				height:322px;
+			}
+
+			.date {
+				float:left;
+				height: 69px;
+				width:12.19%; /* 69px / 566px */
+				margin: 5px 11px auto -41px;
+				padding: 5px;
+				border: 2px;
+				border-style: solid;
+				background-color: white;
+				font-size:18px;			
+				text-align: center;
+			}
+
+			.date span {
+				display: block;
+				text-align: center;
+				margin: 12px auto auto auto;
+			}
+			
+			#tituloarticulo{
+				color:orange;
+				font-size:22px;
+			}
+
+			#introduccio{
+				font-size:12px;	
+			}
+
+			#articulo{
+				font-size:14px;	
+				padding:7px;
+			}
+			#der {
+				float:right;
+				width:16.66%; /* 100px / 900px */
+				margin:5px -57px auto auto;
+				border: 2px;
+				border-style: solid;
+				background-color: white;	
+				font-size:20px;
+				height:322px;
+				text-align: center;
+			}
+			#enlaces{
+				font-size:8px;
+			}
+			#tituloenlaces{
+				color:orange;
+			}
+			#liniadeseparacion{
+				margin:5px auto auto 30px;
+				width:57%; /* 57px / 100px */
+			}
+			#pie {
+				float: left;
+				width: 95.44%; /* 859px / 900px */
+				margin: 6px auto auto 39px;
+				height: 65px;
+				border: 2px;
+				border-style: solid;
+				background: white;	
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="pagina">
+				<div id="cabecera">
+					<div id="titulocabecera">
+						WEBart
+					</div>
+					<div class="relleno"></div>
+				</div>
+				<div id="contenido">							
+					<div id="izq"></br>
+						<p class="date"><span>9 GEN</span>2013</p>
+						<h3 id="tituloarticulo">Titular Article</h3>
+						<div id="introduccio">
+							<p>Introduccio, introduccio, introduccio, introduccio, introduccio, introduccio, 								introduccio,</p>
+							<p>introduccio, introduccio, introduccio, introduccio, introduccio, introduccio, 								introduccio,</p>
+							<p>introduccio, introduccio, introduccio, introduccio, introduccio, introduccio, 								introduccio,</p>
+							<p>introduccio, introduccio, introduccio, introduccio,</p>
+						</div>
+						<p id="articulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor 							ipsum, aliquet vitae fringilla id, condimentum id neque. Pellentesque tempor volutpat purus. 							Quisque in dolor urna. Sed condimentum malesuada lacinia. Nunc lectus nisi, tristique ac 							tempor eu, tempus eget felis. Etiam non ligula nunc. Cras in turpis nec leo pretium commodo 							rhoncus accumsan diam. Nullam non mauris ac velit rutrum eleifend. Cras fringilla fringilla 							sapien, ac porta velit lacinia a. Sed imperdiet nisi mollis magna faucibus eu. Pellentesque tempor 							volutpat purus. Quisque in dolor urna. Sed condimentum malesuada lacinia. Nunc lectus nisi, tristique 							ac tempor eu, tempus.</br></br>
+						Nunc tincidunt ullamcorper accumsan. Mauris cursus facilisis mauris ac tristique. Nullam et 							magna sed sapien lacinia ultricies non sit amet nisl. Maecenas aliquet ultricies magna vitae 							hendre.</p>
+					</div>
+					<div id="der"></br>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+						<div id="enlaces">
+							<h2 id="tituloenlaces">Darreres Not</h2>
+							<p><b>Dissabte 31, Friday</b></p>
+							<hr id="liniadeseparacion"></hr></br>
+						</div>
+					</div>	
+					<div class="relleno"></div>
+				</div>
+				<div id="pie">
+					<div class="relleno"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
